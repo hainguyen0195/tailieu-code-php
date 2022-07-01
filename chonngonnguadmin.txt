@@ -1,0 +1,11 @@
+$(document).ready(function() {
+        $('.nav-link[role="tab"]').click(function(event) {
+            event.preventDefault();
+            let li = $(this).parent();
+            let ul_tablist = $(this).parents('ul[role="tablist"]');
+            let _index = li.index();
+            $('ul[role="tablist"]').not(ul_tablist).each(function(index, el) {
+                $(this).children(`.nav-item`).eq(_index).children(`.nav-link`).tab(`show`);
+            });
+        });
+    });
