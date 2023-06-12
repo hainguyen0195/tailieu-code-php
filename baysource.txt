@@ -1,0 +1,2 @@
+F:\homework\Hcode-asia\admin\templates\export\man
+/admin/templates/export/man/com_source.php
