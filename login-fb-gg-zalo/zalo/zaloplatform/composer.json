@@ -1,0 +1,5 @@
+{
+    "require": {
+        "zaloplatform/zalo-php-sdk": "^4.0"
+    }
+}
