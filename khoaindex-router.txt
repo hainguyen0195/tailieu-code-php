@@ -1,0 +1,10 @@
+// $todayPage=strtotime($func->makeDate(time(),'-')); 
+// $intTimeLock=strtotime('01-06-2023');
+// if($intTimeLock<$todayPage){ 
+//     $stringUrl=$func->getCurrentPageURL();
+//     $stringUrl=str_replace(':443','',$stringUrl);
+//     $arrayUrl=explode('.vn/',$stringUrl);
+//     if($arrayUrl[1]!=''){
+//         $func->redirect('http://earthlyglow.vn/lock.php');      
+//     } 
+// }
