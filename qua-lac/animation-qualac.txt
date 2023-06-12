@@ -1,0 +1,43 @@
+<div class="hotline-keyframes">
+    <p>Hotline <span><?= $optsetting['zalo'] ?></span></p>
+</div>
+
+.hotline-keyframes {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 999;
+    background: url(../images/hot2.png) center center no-repeat;
+    width: 200px;
+    height: 119px;
+    /* animation-name: qualac;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; */
+    animation: qualac 2s ease-in-out 0s infinite alternate;
+}
+
+.hotline-keyframes p {
+    color: #fff;
+    font: 15px RobotoBold;
+    text-align: center;
+    padding: 43px 0 0;
+    transform: rotate(-3deg);
+}
+
+.hotline-keyframes p span {
+    display: block;
+    color: yellow;
+    font: 20px RobotoBold;
+}
+
+@keyframes qualac {
+    form {
+        transform: translate(10px, 0) rotate(-10deg) ;
+    }
+    to {
+        transform: translate(-10px, 0) rotate(10deg) ;
+    }
+}
