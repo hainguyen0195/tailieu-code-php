@@ -30,7 +30,7 @@ NN_FRAMEWORK.Search = function(){
             <a href="javascript:void(0);" class="search ">Search</a>
             <div class="form-row-search" >
                 <form method="GET" name="frm_search" id="frm_search" onsubmit="return false;">
-                    <input id="keyword" name="keyword" type="text" value="<?=(isset($tukhoa) && $tukhoa != '') ? $tukhoa : ''?>" class="search-field" placeholder="Nhập từ khóa ">
+                    <input id="keyword" name="keyword" type="text" onkeypress="doEnter(event,'keyword');" value="<?=(isset($tukhoa) && $tukhoa != '') ? $tukhoa : ''?>" class="search-field" placeholder="Nhập từ khóa ">
                 </form>
             </div>
             <div class="clearfix"></div>
