@@ -14,3 +14,20 @@
         $d->rawQuery("update #_static noidung".$key." set noidung".$key."=replace(noidung".$key.",'$str','$rec')");
     }
  ?>
+<?php
+$str = "baogiaepcocbetong.com";
+$rec = "epcocbetongtienthanh.com";
+
+# Thuc hien update duong dan trong noidung bang product
+
+$d->reset();
+$sql_setting = "update #_product noidung_vi set noidung_vi=replace(noidung_vi,'$str','$rec')";
+$d->query($sql_setting);
+$row_background = $d->result_array();
+
+$d->reset();
+$sql_setting = "update #_baiviet noidung_vi set noidung_vi=replace(noidung_vi,'$str','$rec')";
+$d->query($sql_setting);
+$row_background = $d->result_array();
+
+?>
