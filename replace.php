@@ -1,3 +1,17 @@
+$str = "demo.anhisolution.com/spa-minhnguyet-1201225w/";
+$rec = "daotaongheminhnguyet.com/";
+
+# Thuc hien update duong dan trong noidung bang product
+$sql_setting = "UPDATE #_static SET contentvi = REPLACE(contentvi, '$str', '$rec')";
+$d->rawQuery($sql_setting);
+
+$sql_setting = "UPDATE #_product SET contentvi = REPLACE(contentvi, '$str', '$rec')";
+$d->rawQuery($sql_setting);
+
+$sql_setting = "UPDATE #_news SET contentvi = REPLACE(contentvi, '$str', '$rec')";
+$d->rawQuery($sql_setting);
+
+
 <?php 
     $str = "thietkewebsite-tka.com";
     $rec = "topvipvietnam.vn";
